@@ -96,7 +96,7 @@ const clickCellDiv = (e) => {
     const classList = e.target.classList;
     const location = classList[1];   // storing 2nd class in location
 
-    if(classList[2]==='x' || classList[2]==='o') {  
+    if(classList[2]==='x' || classList[2]==='o' || !gameIsRunning) {  
         return;   // if 3rd class contains either x or o then return and not add further any class
     }
 
